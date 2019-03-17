@@ -13,6 +13,8 @@ class ViewController: UIViewController, UISearchBarDelegate, UIWebViewDelegate {
     @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var WebView: UIWebView!
     
+    
+    
     @IBAction func back(_ sender: Any) {
         if WebView.canGoBack
         {
@@ -64,10 +66,24 @@ class ViewController: UIViewController, UISearchBarDelegate, UIWebViewDelegate {
         }
     }
     
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        let searchBarStyle = SearchBar.value(forKey: "searchField") as? UITextField
+        searchBarStyle?.clearButtonMode = .always
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        let searchBarStyle = SearchBar.value(forKey: "searchField") as? UITextField
+        searchBarStyle?.clearButtonMode = .never
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         WebView.loadRequest(URLRequest(url: URL(string: "https://spezcomputer.weebly.com/")!))
+        self.navigationController?.navigationBar.topItem?.titleView = SearchBar
+        let searchBarStyle = SearchBar.value(forKey: "searchField") as? UITextField
+        searchBarStyle?.clearButtonMode = .never
     }
 
     override func didReceiveMemoryWarning() {

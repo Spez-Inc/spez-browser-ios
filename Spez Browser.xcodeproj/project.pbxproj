@@ -49,6 +49,14 @@
 		AC3D441C223AC7FB00FB8E23 /* Spez_BrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spez_BrowserUITests.swift; sourceTree = "<group>"; };
 		AC3D441E223AC7FB00FB8E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC3D442A223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		ACE830BD223D549300903C6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		ACE830BE223D575900903C6F /* Spez Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Spez Browser.entitlements"; sourceTree = "<group>"; };
+		ACE830C7223D701D00903C6F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		ACE830C8223D701D00903C6F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ACE830C9223D702500903C6F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		ACE830CA223D702600903C6F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ACE830CB223D720800903C6F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		ACE830CC223D720800903C6F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		AC3D43FB223AC7FB00FB8E23 /* Spez Browser */ = {
 			isa = PBXGroup;
 			children = (
+				ACE830BE223D575900903C6F /* Spez Browser.entitlements */,
 				AC3D442A223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png */,
 				AC3D43FC223AC7FB00FB8E23 /* AppDelegate.swift */,
 				AC3D43FE223AC7FB00FB8E23 /* ViewController.swift */,
@@ -190,6 +199,9 @@
 		AC3D43F1223AC7FA00FB8E23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					coming,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Spez Inc.";
@@ -197,7 +209,13 @@
 					AC3D43F8223AC7FB00FB8E23 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = N6CT7H22F7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 					AC3D440C223AC7FB00FB8E23 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -305,6 +323,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				AC3D4401223AC7FB00FB8E23 /* Base */,
+				ACE830BD223D549300903C6F /* en */,
+				ACE830C7223D701D00903C6F /* de */,
+				ACE830C9223D702500903C6F /* ru */,
+				ACE830CB223D720800903C6F /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -313,6 +335,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				AC3D4406223AC7FB00FB8E23 /* Base */,
+				ACE830C8223D701D00903C6F /* de */,
+				ACE830CA223D702600903C6F /* ru */,
+				ACE830CC223D720800903C6F /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -374,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -417,14 +444,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: spezmacguy@yahoo.com (A72J72GJG4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: spezmacguy@yahoo.com (A72J72GJG4)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Spez Browser/Spez Browser.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N6CT7H22F7;
 				INFOPLIST_FILE = "Spez Browser/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spezcomputer.weebly.Spez-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -433,8 +463,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: spezmacguy@yahoo.com (A72J72GJG4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: spezmacguy@yahoo.com (A72J72GJG4)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Spez Browser/Spez Browser.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N6CT7H22F7;
 				INFOPLIST_FILE = "Spez Browser/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
