@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0501EF223E481D00172C49 /* new-tab.html in Resources */ = {isa = PBXBuildFile; fileRef = AC0501EE223E481D00172C49 /* new-tab.html */; };
+		AC0501F1223E48DD00172C49 /* files in Resources */ = {isa = PBXBuildFile; fileRef = AC0501F0223E48DD00172C49 /* files */; };
+		AC2C9402223EBD04004727D6 /* site-error.html in Resources */ = {isa = PBXBuildFile; fileRef = AC2C9401223EBD04004727D6 /* site-error.html */; };
+		AC2C9404223EC469004727D6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC2C9403223EC469004727D6 /* Settings.bundle */; };
+		AC2C9408223ECEC5004727D6 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2C9407223ECEC5004727D6 /* SettingsBundleHelper.swift */; };
 		AC3D43FD223AC7FB00FB8E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D43FC223AC7FB00FB8E23 /* AppDelegate.swift */; };
 		AC3D43FF223AC7FB00FB8E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D43FE223AC7FB00FB8E23 /* ViewController.swift */; };
 		AC3D4402223AC7FB00FB8E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3D4400223AC7FB00FB8E23 /* Main.storyboard */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC0501EE223E481D00172C49 /* new-tab.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "new-tab.html"; sourceTree = "<group>"; };
+		AC0501F0223E48DD00172C49 /* files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = files; sourceTree = "<group>"; };
+		AC2C9401223EBD04004727D6 /* site-error.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "site-error.html"; sourceTree = "<group>"; };
+		AC2C9403223EC469004727D6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		AC2C9407223ECEC5004727D6 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		AC3D43F9223AC7FB00FB8E23 /* Spez Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spez Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3D43FC223AC7FB00FB8E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3D43FE223AC7FB00FB8E23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,14 +59,14 @@
 		AC3D441C223AC7FB00FB8E23 /* Spez_BrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spez_BrowserUITests.swift; sourceTree = "<group>"; };
 		AC3D441E223AC7FB00FB8E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC3D442A223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		AC8568E822400D2400C33F42 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		AC8568E922400D2400C33F42 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AC8568EA22400D4300C33F42 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		AC8568EB22400D4300C33F42 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AC8568EC22400D5300C33F42 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		AC8568ED22400D5300C33F42 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		ACE830BD223D549300903C6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		ACE830BE223D575900903C6F /* Spez Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Spez Browser.entitlements"; sourceTree = "<group>"; };
-		ACE830C7223D701D00903C6F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		ACE830C8223D701D00903C6F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		ACE830C9223D702500903C6F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		ACE830CA223D702600903C6F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		ACE830CB223D720800903C6F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		ACE830CC223D720800903C6F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +117,19 @@
 		AC3D43FB223AC7FB00FB8E23 /* Spez Browser */ = {
 			isa = PBXGroup;
 			children = (
+				AC0501F0223E48DD00172C49 /* files */,
+				AC0501EE223E481D00172C49 /* new-tab.html */,
+				AC2C9401223EBD04004727D6 /* site-error.html */,
 				ACE830BE223D575900903C6F /* Spez Browser.entitlements */,
 				AC3D442A223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png */,
 				AC3D43FC223AC7FB00FB8E23 /* AppDelegate.swift */,
 				AC3D43FE223AC7FB00FB8E23 /* ViewController.swift */,
 				AC3D4400223AC7FB00FB8E23 /* Main.storyboard */,
+				AC2C9403223EC469004727D6 /* Settings.bundle */,
 				AC3D4403223AC7FB00FB8E23 /* Assets.xcassets */,
 				AC3D4405223AC7FB00FB8E23 /* LaunchScreen.storyboard */,
 				AC3D4408223AC7FB00FB8E23 /* Info.plist */,
+				AC2C9407223ECEC5004727D6 /* SettingsBundleHelper.swift */,
 			);
 			path = "Spez Browser";
 			sourceTree = "<group>";
@@ -199,9 +214,6 @@
 		AC3D43F1223AC7FA00FB8E23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				KnownAssetTags = (
-					coming,
-				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Spez Inc.";
@@ -254,9 +266,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2C9404223EC469004727D6 /* Settings.bundle in Resources */,
+				AC2C9402223EBD04004727D6 /* site-error.html in Resources */,
+				AC0501F1223E48DD00172C49 /* files in Resources */,
 				AC3D4407223AC7FB00FB8E23 /* LaunchScreen.storyboard in Resources */,
 				AC3D4404223AC7FB00FB8E23 /* Assets.xcassets in Resources */,
 				AC3D442B223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png in Resources */,
+				AC0501EF223E481D00172C49 /* new-tab.html in Resources */,
 				AC3D4402223AC7FB00FB8E23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3D43FF223AC7FB00FB8E23 /* ViewController.swift in Sources */,
+				AC2C9408223ECEC5004727D6 /* SettingsBundleHelper.swift in Sources */,
 				AC3D43FD223AC7FB00FB8E23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,9 +341,9 @@
 			children = (
 				AC3D4401223AC7FB00FB8E23 /* Base */,
 				ACE830BD223D549300903C6F /* en */,
-				ACE830C7223D701D00903C6F /* de */,
-				ACE830C9223D702500903C6F /* ru */,
-				ACE830CB223D720800903C6F /* tr */,
+				AC8568E822400D2400C33F42 /* tr */,
+				AC8568EA22400D4300C33F42 /* de */,
+				AC8568EC22400D5300C33F42 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -335,9 +352,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				AC3D4406223AC7FB00FB8E23 /* Base */,
-				ACE830C8223D701D00903C6F /* de */,
-				ACE830CA223D702600903C6F /* ru */,
-				ACE830CC223D720800903C6F /* tr */,
+				AC8568E922400D2400C33F42 /* tr */,
+				AC8568EB22400D4300C33F42 /* de */,
+				AC8568ED22400D5300C33F42 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -450,7 +467,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N6CT7H22F7;
 				INFOPLIST_FILE = "Spez Browser/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spezcomputer.weebly.Spez-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,7 +485,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N6CT7H22F7;
 				INFOPLIST_FILE = "Spez Browser/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spezcomputer.weebly.Spez-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";

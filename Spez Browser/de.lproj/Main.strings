@@ -1,9 +1,12 @@
 
-/* Class = "UILabel"; text = "Coming Soon..."; ObjectID = "Lhv-x9-z6i"; */
+/* Class = "UILabel"; text = "Coming Soon..."; ObjectID = "2AD-VT-9zs"; */
 "2AD-VT-9zs.text" = "Demnächst...";
 
 /* Class = "UILabel"; text = "Coming Soon..."; ObjectID = "Lhv-x9-z6i"; */
 "Lhv-x9-z6i.text" = "Demnächst...";
 
 /* Class = "UISearchBar"; placeholder = "Enter URL / Link or Search Something..."; ObjectID = "UCs-6B-7ci"; */
-"UCs-6B-7ci.placeholder" = "URL / Link eingeben oder etwas suchen...";
+"UCs-6B-7ci.placeholder" = "URL / Link eingeben oder etwas suchen ...";
+
+/* Class = "UISearchBar"; placeholder = "Enter URL / Link or Search Something..."; ObjectID = "UCs-6B-7ci"; */
+"xkA-AX-Nnf.title" = "Tabs";

@@ -1,0 +1,183 @@
+<head>
+	<title>New Tab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900" rel="stylesheet"> -->
+</head>
+
+<style>
+	a {
+		color: #353535;
+		text-decoration: none;
+		position: fixed;
+	}
+	
+		
+	body {
+		margin: 8px !important;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	@font-face {
+		font-family: 'Karla';
+		src: url(files/Font.ttf) format("truetype");
+	}
+
+	html {
+		font-family: 'Karla', sans-serif;
+		animation: fadein 1s;
+        background: #f5f5f5;
+	}
+	
+	.main {
+		display: flex;
+        color: #a5a5a5;
+		flex-direction: column;
+		box-sizing: border-box;
+		min-height: 100vh;
+		padding: 40px 48px;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	@keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
+	}
+	
+	p {
+        color: #a5a5a5;
+        font-weight: 400;
+	}
+	
+	#theme1 {
+		border-radius: 5px 0px 0px 5px;
+		border: 5px solid #353535;
+		background-color: transparent;
+		padding: 15px;
+		color: #353535;
+		font-weight: 700;
+		font-family: 'Karla', sans-serif;
+		transition-duration: 0.4s;
+		fill: currentColor;
+        width: 100%;
+	}
+	
+	#theme1 [type="button"] {
+		transition-duration: 0.4s;
+		fill: currentColor;
+		border-radius: 0px 5px 5px 0px;
+	}
+	
+	#theme1:hover[type="button"] {
+		background-color: #353535;
+		color: white;
+		transition-duration: 0.4s;
+		fill: currentColor;
+		border-radius: 0px 5px 5px 0px;
+	}
+	
+	#theme1:active[type="button"] {
+		background-color: #0f705d;
+		color: white;
+		border: 5px solid #0f705d;
+		transition-duration: 0.4s;
+		fill: currentColor;
+		border-radius: 0px 5px 5px 0px;
+	}
+	
+button[fuistyle="Default"] {
+    fill: currentcolor;
+            background: rgb(52,152,219);
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12);
+            padding: 10px;
+            color: white;
+            font-family: 'Karla', sans-serif !important;
+            transition-duration: 0.25s;
+        }
+        
+        button:hover[fuistyle="Default"] {
+            background: rgba(52,152,219,0.85);
+        }
+        
+        button[fuistyle="Text"] {
+            fill: currentcolor;
+            background: none;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            color: #535353;
+            font-family: 'Karla', sans-serif !important;
+            transition-duration: 0.25s;
+        }
+        
+        button:hover[fuistyle="Text"] {
+            background: rgba(35,35,35,0.1);
+        }
+	
+	#theme2 {
+		border-radius: 5px !important;
+		border: hidden;
+		background-color: white; 
+		color: #353535;
+        width: 100%;
+		font-weight: 700;
+		font-family: 'Karla', sans-serif;
+		transition-duration: 0.4s;
+		fill: currentColor;
+		box-shadow: 0 1px 5px 0 rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12);
+        margin: 0px;
+        max-width: 572px;
+	}
+	
+	#bookmarkitem {
+		display: inline-block;
+		-webkit-border-radius: 5px 5px 5px 5px !important;
+		border: hidden;
+		background-color: white;
+		color: #353535;
+		font-weight: 700;
+		font-family: 'Karla', sans-serif;
+		transition-duration: 0.4s;
+		fill: currentColor;
+		box-shadow: 0px 0px 50px -17px rgba(0,0,0,1);
+		width:64px;
+		height: 64px;
+		margin: 10px;
+	}
+	
+	span.item:empty:before {
+		content: "\200b"; /* unicode zero width space character */
+	}
+    
+    .book {
+        background: rgb(250,250,250) !important;
+        margin-right: 20px;
+    }
+    
+    .book:hover {
+        background: #ffffff !important;
+        transform: scale(1.2);
+    }
+</style>
+
+<body><center><div class="main">
+	
+	<div id="weather">
+		<!Weather Widget>
+		<iframe scrolling="no" height="393" id="theme2" src="files/widgets/weather-widget.html"></iframe>
+	</div>
+	
+	<div id="news">
+		<!Stick>
+		<div style="height: 20px;"></div>
+		<hr id="theme" style="width: 100%; padding: 1px; border: none; background-color: #bdc3c7;"></hr>
+		<div style="height: 20px;"></div>
+		<!News Widget>
+		<iframe scrolling="no" height="388" id="theme2" src="https://feed.mikle.com/widget/v2/?widget_parameter={%22type%22%3A%22%22%2C%22sources%22%3A[{%22source%22%3A%22https%3A%2F%2Fnews.google.com%2Fnews%2Frss%2F%22%2C%22type%22%3A%22%22%2C%22replaceable%22%3A%22false%22}]%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A0%2C%22card_height%22%3A%22224%22%2C%22height_by_article%22%3A%223%22%2C%22target%22%3A%22_top%22%2C%22font%22%3A%22-apple-system%22%2C%22title_font_size%22%3A%2216%22%2C%22item_title_font_size%22%3A%2216%22%2C%22item_description_font_size%22%3A%2212%22%2C%22border%22%3A%22off%22%2C%22css_url%22%3A%22%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22remove_duplicate_article%22%3A%22off%22%2C%22thumbnail_position%22%3A%22left%22%2C%22text_alignment%22%3A%22left%22%2C%22corner%22%3A%22square%22%2C%22scroll_switch%22%3A%22on%22%2C%22scroll_style%22%3A%22hs%22%2C%22scroll%22%3A%22on%22%2C%22navigation_arrow%22%3A%22off%22%2C%22auto_scroll%22%3A%22on%22%2C%22auto_scroll_direction%22%3A%22rtl%22%2C%22auto_scroll_step_speed%22%3A%224%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22new%22%2C%22title%22%3A%22off%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%23505659%22%2C%22widget_title_bold%22%3A%22off%22%2C%22feed_title_bold%22%3A%22on%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23ffffff%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%233498db%22%2C%22item_border_bottom%22%3A%22off%22%2C%22item_description%22%3A%22both%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%2275%22%2C%22item_description_color%22%3A%22%23505659%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20-%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22%22%2C%22item_display_title%22%3A%22off%22%2C%22item_display_description%22%3A%22off%22%2C%22item_display_date%22%3A%22off%22%2C%22item_display_location%22%3A%22off%22%2C%22item_description_style%22%3A%22card%22%2C%22item_thumbnail%22%3A%22crop%22%2C%22item_thumbnail_selection%22%3A%22first%22%2C%22item_thumbnail_force_https%22%3A%22off%22%2C%22branding%22%3A%22off%22%2C%22article_num%22%3A%2210%22%2C%22item_player%22%3A%22off%22%2C%22item_image_scale%22%3A%22best-fill%22%2C%22item_image_align%22%3A%22left%22%2C%22item_alt_image_link%22%3A%22%22%2C%22item_date_time_size%22%3A%2212%22%2C%22item_date_time_color%22%3A%22%23505659%22}"></iframe>
+	</div>
+<body></center></body>

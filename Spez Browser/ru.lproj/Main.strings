@@ -1,5 +1,5 @@
 
-/* Class = "UILabel"; text = "Coming Soon..."; ObjectID = "Lhv-x9-z6i"; */
+/* Class = "UILabel"; text = "Coming Soon..."; ObjectID = "2AD-VT-9zs"; */
 "2AD-VT-9zs.text" = "Скоро будет...";
 
 /* Class = "UILabel"; text = "Coming Soon..."; ObjectID = "Lhv-x9-z6i"; */
@@ -7,3 +7,6 @@
 
 /* Class = "UISearchBar"; placeholder = "Enter URL / Link or Search Something..."; ObjectID = "UCs-6B-7ci"; */
 "UCs-6B-7ci.placeholder" = "Введите URL / ссылку или найдите что-нибудь...";
+
+/* Class = "UISearchBar"; placeholder = "Enter URL / Link or Search Something..."; ObjectID = "UCs-6B-7ci"; */
+"xkA-AX-Nnf.title" = "Вкладки";
