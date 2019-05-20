@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    
+    </head>
+    
+    <style>
+        * {
+            font-family: -apple-system !important;
+        }
+    
+        html {
+            background: #f5f5f5;
+        }
+    
+    #frm {
+        display: none !important;
+    }
+    </style>
+    
+    <script>
+        function load(link) {
+            document.getElementById("frm").src = link;
+        }
+    function wload() {
+        document.getElementById("title").innerHTML = document.getElementById("frm").contentWindow.document.getElementsByTagName("title")[0];
+    }
+    </script>
+    
+    <body>
+        <h2 id="title">Title</h2>
+        <p id="content">
+            Web Content.
+        </p>
+        <iframe id="frm" onload="wload();">
+    </body>
+</html>

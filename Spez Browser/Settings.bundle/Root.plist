@@ -46,7 +46,7 @@
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
-			<string>Enable Dark Mode</string>
+			<string>Dark Mode (Restart Required)</string>
 			<key>Key</key>
 			<string>dark-mode</string>
 			<key>DefaultValue</key>

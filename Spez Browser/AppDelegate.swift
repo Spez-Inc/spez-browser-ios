@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Spez Browser
 //
-//  Created by Konuk Kullanıcı on 14.03.2019.
+//  Created by Sarp Ertoksöz on 14.03.2019.
 //  Copyright © 2019 Spez Inc. All rights reserved.
 //
 
@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Dark Mode
+        if UserDefaults.standard.bool(forKey: "dark-mode") == true {
+            let navigationBarAppearace = UINavigationBar.appearance()
+            
+            navigationBarAppearace.barTintColor = UIColor(red:0.21, green:0.21, blue:0.21, alpha:0.75)
+            UINavigationBar.appearance().barStyle = UIBarStyle.blackOpaque
+        }
         return true
     }
 

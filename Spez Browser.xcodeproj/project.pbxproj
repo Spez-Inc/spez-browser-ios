@@ -20,6 +20,13 @@
 		AC3D4412223AC7FB00FB8E23 /* Spez_BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D4411223AC7FB00FB8E23 /* Spez_BrowserTests.swift */; };
 		AC3D441D223AC7FB00FB8E23 /* Spez_BrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D441C223AC7FB00FB8E23 /* Spez_BrowserUITests.swift */; };
 		AC3D442B223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3D442A223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png */; };
+		ACE7642622916F9C00B66C65 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7642522916F9C00B66C65 /* MenuViewController.swift */; };
+		ACF767C7229016E900DD6C37 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF767C6229016E900DD6C37 /* plus.png */; };
+		ACF767CD2290180B00DD6C37 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF767CC2290180B00DD6C37 /* tab.png */; };
+		ACF767CF2290184100DD6C37 /* dots-vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF767CE2290184100DD6C37 /* dots-vertical.png */; };
+		ACF767D32290197F00DD6C37 /* arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF767D02290197F00DD6C37 /* arrow-right.png */; };
+		ACF767D42290197F00DD6C37 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF767D12290197F00DD6C37 /* refresh.png */; };
+		ACF767D52290197F00DD6C37 /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF767D22290197F00DD6C37 /* arrow-left.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +72,15 @@
 		AC8568EB22400D4300C33F42 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AC8568EC22400D5300C33F42 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		AC8568ED22400D5300C33F42 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ACE7642522916F9C00B66C65 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		ACE830BD223D549300903C6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		ACE830BE223D575900903C6F /* Spez Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Spez Browser.entitlements"; sourceTree = "<group>"; };
+		ACF767C6229016E900DD6C37 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		ACF767CC2290180B00DD6C37 /* tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab.png; sourceTree = "<group>"; };
+		ACF767CE2290184100DD6C37 /* dots-vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots-vertical.png"; sourceTree = "<group>"; };
+		ACF767D02290197F00DD6C37 /* arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-right.png"; sourceTree = "<group>"; };
+		ACF767D12290197F00DD6C37 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		ACF767D22290197F00DD6C37 /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +139,17 @@
 				AC3D43FC223AC7FB00FB8E23 /* AppDelegate.swift */,
 				AC3D43FE223AC7FB00FB8E23 /* ViewController.swift */,
 				AC3D4400223AC7FB00FB8E23 /* Main.storyboard */,
+				ACE7642522916F9C00B66C65 /* MenuViewController.swift */,
 				AC2C9403223EC469004727D6 /* Settings.bundle */,
 				AC3D4403223AC7FB00FB8E23 /* Assets.xcassets */,
 				AC3D4405223AC7FB00FB8E23 /* LaunchScreen.storyboard */,
 				AC3D4408223AC7FB00FB8E23 /* Info.plist */,
+				ACF767D02290197F00DD6C37 /* arrow-right.png */,
+				ACF767D12290197F00DD6C37 /* refresh.png */,
+				ACF767D22290197F00DD6C37 /* arrow-left.png */,
+				ACF767CC2290180B00DD6C37 /* tab.png */,
+				ACF767CE2290184100DD6C37 /* dots-vertical.png */,
+				ACF767C6229016E900DD6C37 /* plus.png */,
 				AC2C9407223ECEC5004727D6 /* SettingsBundleHelper.swift */,
 			);
 			path = "Spez Browser";
@@ -266,13 +287,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF767D32290197F00DD6C37 /* arrow-right.png in Resources */,
 				AC2C9404223EC469004727D6 /* Settings.bundle in Resources */,
 				AC2C9402223EBD04004727D6 /* site-error.html in Resources */,
+				ACF767D42290197F00DD6C37 /* refresh.png in Resources */,
 				AC0501F1223E48DD00172C49 /* files in Resources */,
+				ACF767CD2290180B00DD6C37 /* tab.png in Resources */,
 				AC3D4407223AC7FB00FB8E23 /* LaunchScreen.storyboard in Resources */,
+				ACF767CF2290184100DD6C37 /* dots-vertical.png in Resources */,
 				AC3D4404223AC7FB00FB8E23 /* Assets.xcassets in Resources */,
 				AC3D442B223AE62C00FB8E23 /* Icon-App-83.5x83.5@2x.png in Resources */,
+				ACF767C7229016E900DD6C37 /* plus.png in Resources */,
 				AC0501EF223E481D00172C49 /* new-tab.html in Resources */,
+				ACF767D52290197F00DD6C37 /* arrow-left.png in Resources */,
 				AC3D4402223AC7FB00FB8E23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +328,7 @@
 				AC3D43FF223AC7FB00FB8E23 /* ViewController.swift in Sources */,
 				AC2C9408223ECEC5004727D6 /* SettingsBundleHelper.swift in Sources */,
 				AC3D43FD223AC7FB00FB8E23 /* AppDelegate.swift in Sources */,
+				ACE7642622916F9C00B66C65 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -448,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -467,6 +495,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N6CT7H22F7;
 				INFOPLIST_FILE = "Spez Browser/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spezcomputer.weebly.Spez-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +514,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = N6CT7H22F7;
 				INFOPLIST_FILE = "Spez Browser/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spezcomputer.weebly.Spez-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";

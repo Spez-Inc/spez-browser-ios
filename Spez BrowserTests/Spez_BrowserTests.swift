@@ -2,7 +2,7 @@
 //  Spez_BrowserTests.swift
 //  Spez BrowserTests
 //
-//  Created by Konuk Kullanıcı on 14.03.2019.
+//  Created by Sarp Ertoksöz on 14.03.2019.
 //  Copyright © 2019 Spez Inc. All rights reserved.
 //
 
